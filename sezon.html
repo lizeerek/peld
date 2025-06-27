@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style.css">
+  <title>2 Sezon Turniejów</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: #1a1a1a;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid #ffe600;
+    }
+    header h1 {
+      color: #ffe600;
+      margin: 0;
+      font-size: 24px;
+    }
+    nav a {
+      margin-left: 15px;
+      color: #00aaff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      flex: 1;
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .ranking-button {
+      display: inline-block;
+      background-color: #3b82f6;
+      color: white;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-bottom: 30px;
+      transition: background-color 0.2s ease;
+    }
+    .ranking-button:hover {
+      background-color: #2563eb;
+    }
+
+    h2 {
+      text-align: center;
+      color: #ffe600;
+      margin-bottom: 20px;
+    }
+    h3 {
+      color: #00ffcc;
+    }
+    h4 {
+      color: #00ff88;
+      margin-top: 15px;
+    }
+    h4:nth-of-type(2) { color: #88ff00; }
+    h4:nth-of-type(3) { color: #ff4444; }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <h1 class="logo">Polska E-Liga Darta</h1>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Strona Główna</a></li>
+      <li><a href="przekladka.html">Przekładka</a></li>
+      <li><a href="regulaminy.html">Regulaminy</a></li>
+      <li><a href="#onas">O nas</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+  <div class="content">
+    <div style="text-align: center;">
+      <a href="https://n01darts.com/n01/league/l_stats.html?id=lg_7icg_6984&tab=rank" 
+         class="ranking-button" target="_blank">
+        Ranking Graczy
+      </a>
+    </div>
+
+    <h2>2 Sezon Turniejów Polskiej E-Ligi Darta</h2>
+
+    <h3>Formaty rozgrywek:</h3>
+
+    <h4>Poniedziałek:</h4>
+    <ul>
+      <li> 701 Faza grupowa – First to 2 / Faza pucharowa – First to 3 / Półfinał – First to 4 / Mecz o 3 miejsce, Finał – First to 4/5</li>
+      <li>LL – Półfinały i Finał – First to 4 – reszta faz – First to 3</li>
+    </ul>
+
+    <h4>Środa:</h4>
+    <ul>
+      <li> 170 Faza grupowa – First to 3 Sets / 2 Legs // Faza pucharowa – First to 3 Sets / 3 Legs // Półfinał – First to 4 Sets / 3 Legs</li>
+      <li>Mecz o 3 miejsce, Finał – First to 5 Sets / 3 Legs</li>
+      <li>LL – Półfinały i Finał – First to 4 Sets / 3 Legs – reszta faz – First to 3 Sets / 3 Legs</li>
+    </ul>
+
+    <h4>Sobota:</h4>
+    <ul>
+      <li>501 Faza grupowa – First to 3 / Faza pucharowa – First to 4 / Półfinał, Mecz o 3 miejsce, Finał – First to 5</li>
+      <li>LL – Półfinały i Finał – First to 4 – reszta faz – First to 3</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Polska E-Liga Darta
+  </div>
+</body>
+</html>

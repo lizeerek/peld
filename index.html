@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polska E-Liga Darta</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="navbar-container">
+      <div class="logo">
+  <img src="assets/Logo Białe.png" alt="Polska E-Liga Darta Logo" />
+</div>
+
+      <ul class="nav-links">
+        <li><a href="sezon.html">2 Sezon Turniejów</a></li>
+        <li><a href="przekladka.html">Przekładka</a></li>
+        <li><a href="regulaminy.html">Regulaminy</a></li>
+        <li><a href="#">O nas</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="section">
+    <div class="terminarz-buttons">
+      <button class="button blue" onclick="openModal(['assets/Terminarz Grupa 1a (1).jpg','assets/Terminarz Grupa 1b (1).jpg'])">Terminarz Grupa 1</button>
+      <button class="button blue" onclick="openModal(['assets/Terminarz Grupa 2a (1).jpg','assets/Terminarz Grupa 2b (1).jpg'])">Terminarz Grupa 2</button>
+      <button class="button blue" onclick="openModal(['assets/Terminarz Grupa 3a (1).jpg','assets/Terminarz Grupa 3b (1).jpg'])">Terminarz Grupa 3</button>
+      <button class="button blue" onclick="openModal(['assets/Terminarz Grupa 4 (2).jpg'])">Terminarz Grupa 4</button>
+      <button class="button blue" onclick="openModal(['assets/Terminarz Grupa 5 (1).jpg'])">Terminarz Grupa 5</button>
+      <button class="button blue" onclick="openModal(['assets/Terminarz Grupa 6 (1).jpg'])">Terminarz Grupa 6</button>
+      <button class="button blue" onclick="openModal(['assets/Terminarz Grupa 7 (1).jpg'])">Terminarz Grupa 7</button>
+      <button class="button blue" onclick="openModal(['assets/Terminarz Grupa 8 (1).jpg'])">Terminarz Grupa 8</button>
+      <button class="button blue" onclick="openModal(['assets/Terminarz Grupa 9 (1) (1).jpg'])">Terminarz Grupa 9</button>
+      <button class="button green" onclick="openModal(['assets/Terminarz Kobiet.jpg'])">Terminarz Grupa Kobiet</button>
+    </div>
+
+    <button class="wpisowe-button" onclick="openTextModal()">Dane do wpisowego</button>
+  </main>
+
+  <!-- Modal (grafika) -->
+  <div class="modal" id="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content" id="modal-content"></div>
+  </div>
+
+  <!-- Modal (tekstowy) -->
+  <div class="modal" id="textModal">
+    <span class="close" onclick="closeTextModal()">&times;</span>
+    <div class="modal-content">
+      <h2>Dane do wpisowego</h2>
+      <p><strong>Blik:</strong> 508816600</p>
+      <p><strong>Paypal:</strong> radektur924@gmail.com</p>
+      <p><strong>Konto bankowe:</strong> 33102033780000190204299582</p>
+    </div>
+  </div>
+  <div class="sponsors">
+  <img src="assets/wega trofea.png" alt="Wega Trofea" />
+  <img src="assets/baltic.jpg" alt="Baltic Darts" />
+</div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2025 Polska E-Liga Darta
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

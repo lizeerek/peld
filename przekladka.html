@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Przekładka - Polska E-Liga Darta</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+    form {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      background-color: #2a2a2a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    .submit-btn {
+      background-color: #ffe600;
+      color: black;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<nav>
+  <a href="index.html" style="color: #ffe600; font-weight: bold; text-decoration: none;">← Powrót na stronę główną</a>
+</nav>
+<body>
+ <h1 style="text-align: center;">Przekładka meczu</h1>
+  <form action="send.php" method="POST">
+    <label for="liga">Wybierz ligę</label>
+    <select name="liga" id="liga" required>
+      <option value="">-- Wybierz --</option>
+      <option value="Grupa 1">Grupa 1</option>
+      <option value="Grupa 2">Grupa 2</option>
+      <option value="Grupa 3">Grupa 3</option>
+      <option value="Grupa 4">Grupa 4</option>
+      <option value="Grupa 5">Grupa 5</option>
+      <option value="Grupa 6">Grupa 6</option>
+      <option value="Grupa 7">Grupa 7</option>
+      <option value="Grupa 8">Grupa 8</option>
+      <option value="Grupa 9">Grupa 9</option>
+      <option value="Grupa Kobiet">Grupa Kobiet</option>
+    </select>
+
+    <label for="imie">Imię</label>
+    <input type="text" name="imie" id="imie" required />
+
+    <label for="nazwisko">Nazwisko</label>
+    <input type="text" name="nazwisko" id="nazwisko" required />
+
+    <label for="przeciwnik">Przeciwnik (Imię i Nazwisko)</label>
+    <input type="text" name="przeciwnik" id="przeciwnik" required />
+
+    <label for="rodzaj">Rodzaj przekładki</label>
+    <select name="rodzaj" id="rodzaj" required>
+      <option value="">-- Wybierz --</option>
+      <option value="1 tygodniowa">1 tygodniowa (2 na sezon)</option>
+      <option value="2 tygodniowa">2 tygodniowa (1 na sezon)</option>
+      <option value="3 dniowa">3 dniowa (bez limitu)</option>
+    </select>
+
+    <label for="wina">W czyjej winie?</label>
+    <select name="wina" id="wina" required>
+      <option value="">-- Wybierz --</option>
+      <option value="Moja">Moja</option>
+      <option value="Przeciwnika">Przeciwnika</option>
+    </select>
+
+    <label for="powod">Powód</label>
+    <select name="powod" id="powod" required>
+      <option value="">-- Wybierz --</option>
+      <option value="Wyjazd">Wyjazd</option>
+      <option value="Praca">Praca</option>
+      <option value="Zdrowie">Zdrowie</option>
+      <option value="Inny">Inny</option>
+    </select>
+
+    <label for="numer_meczu">Numer meczu</label>
+    <select name="numer_meczu" id="numer_meczu" required>
+      <option value="">-- Wybierz numer meczu --</option>
+      <!-- Generowane opcje 1-22 -->
+      <option value="1">Mecz 1</option>
+      <option value="2">Mecz 2</option>
+      <option value="3">Mecz 3</option>
+      <option value="4">Mecz 4</option>
+      <option value="5">Mecz 5</option>
+      <option value="6">Mecz 6</option>
+      <option value="7">Mecz 7</option>
+      <option value="8">Mecz 8</option>
+      <option value="9">Mecz 9</option>
+      <option value="10">Mecz 10</option>
+      <option value="11">Mecz 11</option>
+      <option value="12">Mecz 12</option>
+      <option value="13">Mecz 13</option>
+      <option value="14">Mecz 14</option>
+      <option value="15">Mecz 15</option>
+      <option value="16">Mecz 16</option>
+      <option value="17">Mecz 17</option>
+      <option value="18">Mecz 18</option>
+      <option value="19">Mecz 19</option>
+      <option value="20">Mecz 20</option>
+      <option value="21">Mecz 21</option>
+      <option value="22">Mecz 22</option>
+    </select>
+
+    <button type="submit" class="submit-btn">Wyślij</button>
+  </form>
+</body>
+</html>
